@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>REST End Points</title>
+    <style>
+        body{
+            font-size:14pt;
+        }
+        .apilink{
+            font-size:  14pt;
+        }
+    </style>
+</head>
+<body>
+    <h2>Today</h2>
+    <hr />
+    Pulls the same data as on the Today page.
+    <ul>
+        <li><a class="apilink" href="/api/v1/Today/Tasks">/api/v1/Today/Tasks</a>: Get a list of today's Tasks</li>
+        <li><a class="apilink" href="/api/v1/Today/Mail">/api/v1/Today/Mail</a>: Get a list of unread mail</li>
+        <li><a class="apilink" href="/api/v1/Today/Events">/api/v1/Today/Events</a>: Get a list of today's Events</li>
+        <li><a class="apilink" href="/api/v1/Today/News">/api/v1/Today/News</a>: Get a list of today's News</li>
+        <li><a class="apilink" href="/api/v1/Today/Almanac/Crops">/api/v1/Almanac/Crops</a>: Get a list of in season crops</li>
+        <li><a class="apilink" href="/api/v1/Today/Almanac/Fish">/api/v1/Almanac/Fish</a>: Get a list of in season fish</li>
+    </ul>
+
+    <h2>Farm Assets</h2>
+    <hr />
+    <ul>
+        <li><a class="apilink" href="/api/v1/Assets/Crops">/api/v1/Assets/Crops</a>: Get a list of all crops growing</li>
+        <li><a class="apilink" href="/api/v1/Assets/LiveStock">/api/v1/Assets/LiveStock</a>: Get a list of all live stock</li>
+        <li><a class="apilink" href="/api/v1/Assets/Machines">/api/v1/Assets/Machines</a>: Get a list of all machines</li>
+        <li><a class="apilink" href="/api/v1/Assets/Buildings">/api/v1/Assets/Buildings</a>: Get a list of all buildings</li>
+        <li><a class="apilink" href="/api/v1/Assets/Inventory">/api/v1/Assets/Inventory</a>: Get a list of all items in inventory</li>
+
+    </ul>
+
+    <h2>Catalogue</h2>
+    <hr />
+    Pulls lists of in game items.
+    <ul>
+        <li><a class="apilink" href="/api/v1/Catalog/All">/api/v1/Catalog/All</a>: Get a list of game Items</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Items">/api/v1/Catalog/Items</a>: Get a list of game Objects</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Items/Raw">/api/v1/Catalog/Items/Raw</a>: Get a list of game Objects without string replacement</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Tools">/api/v1/Catalog/Tools</a>: Get a list of Tools</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Tools/Raw">/api/v1/Catalog/Tools/Raw</a>: Get a list of Tools without string replacement</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Shirts">/api/v1/Catalog/Shirts</a>: Get a list of Shirts</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Shirts/Raw">/api/v1/Catalog/Shirts/Raw</a>: Get a list of Shirts without string replacement</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Pants">/api/v1/Catalog/Pants</a>: Get a list of Pants</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Pants/Raw">/api/v1/Catalog/Pants/Raw</a>: Get a list of Pants without string replacement</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Weapons">/api/v1/Catalog/Weapons</a>: Get a list of Weapons</li>
+        <li><a class="apilink" href="/api/v1/Catalog/Weapons/Raw">/api/v1/Catalog/Weapons/Raw</a>: Get a list of Weapons without string replacement</li>
+    </ul>
+    <h2>Growables</h2>
+    <hr />
+    Pulls lists of items that can be grown.
+    <ul>
+        <li><a class="apilink" href="/api/v1/Growables/Crops">/api/v1/Growables/Crops</a>: Get a list of crops with extended information</li>
+        <li><a class="apilink" href="/api/v1/Growables/Crops/Raw">/api/v1/Growables/Crops/Raw</a>: Get a list of the raw CropData entries</li>
+        <li><a class="apilink" href="/api/v1/Growables/GiantCrops">/api/v1/Growables/GiantCrops</a>: Get a list of Giant Crop entries</li>
+        <li><a class="apilink" href="/api/v1/Growables/FruitTrees">/api/v1/Growables/FruitTrees</a>: Get a list of Fruit Tree entries</li>
+        <li><a class="apilink" href="/api/v1/Growables/FruitTrees/Raw">/api/v1/Growables/FruitTrees/Raw</a>: Get a list of Fruit Tree entries without string replacement</li>
+    </ul>
+    <h2>Crafting</h2>
+    <hr />
+    Pull lists of items that can be crafted.
+    <ul>
+        <li><a class="apilink" href="/api/v1/Crafting/Crafttables">/api/v1/Crafting/Crafttables</a>: Get a list of all crafting recipes</li>
+        <li><a class="apilink" href="/api/v1/Crafting/BigCrafttables">/api/v1/Crafting/BigCrafttables</a>: Get a list of all Big Craftable recipes</li>
+        <li><a class="apilink" href="/api/v1/Crafting/BigCrafttables/Raw">/api/v1/Crafting/BigCrafttables/Raw</a>: Get a list of Big Craftable recipes without string replacement</li>
+    </ul>
+    <h2>Locations</h2>
+    <hr />
+    Pull location lists and details.
+    <ul>
+        <li><a class="apilink" href="/api/v1/Locations/List">/api/v1/Locations/List</a>: Get a list of all game Locations</li>
+        <li><a class="apilink" href="/api/v1/Locations/Summary">/api/v1/Locations/Summary</a>: Get a summary list of all game Locations</li>
+        <li><a class="apilink" href="/api/v1/Locations/Details/{locationName}">/api/v1/Locations/Details/{locationName}</a>: Get the details of the Location</li>
+    </ul>
+    <h2>Mail</h2>
+    <hr />
+    Pulls lists of Mail messages
+    <ul>
+        <li><a class="apilink" href="/api/v1/Mail/All">/api/v1/Mail/All</a>: Get a list of all mail received Ids</li>
+        <li><a class="apilink" href="/api/v1/Mail/All/Details">/api/v1/Mail/All/Details</a>: Get a detailed list of mail received</li>
+        <li><a class="apilink" href="/api/v1/Mail/New">/api/v1/Mail/New</a>: Get a list of new mail Ids</li>
+        <li><a class="apilink" href="/api/v1/Mail/New/Details">/api/v1/Mail/New/Details</a>: Get a detailed list of new mail</li>
+        <li><a class="apilink" href="/api/v1/Mail/Tracking">/api/v1/Mail/Tracking</a>: Get a list of tracking mail Ids</li>
+
+    </ul>
+</body>
+</html>
