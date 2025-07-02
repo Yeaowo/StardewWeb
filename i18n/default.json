@@ -278,5 +278,17 @@
   //  terrain tasks
   //
   "tasks.terrain.fence": "Damaged Fence at Farm",
-  "tasks.terrain.damaged": "Damaged Fences: "
+  "tasks.terrain.damaged": "Damaged Fences: ",
+  "hud.balance": "Current Balance",
+  "hud.year": "Year",
+  "hud.season": "Season",
+  "hud.day": "Day",
+  "hud.time": "Time",
+  "ui.ok": "Ok",
+  "ui.close": "Close",
+  "ui.itemtosearch": "Item to search for:",
+  "ui.searchplaceholder": "Use an '*' for wild card search",
+  "ui.search": "Search",
+  "ui.stoptime": "Stop Time",
+  "ui.starttime": "Start Time"
 }

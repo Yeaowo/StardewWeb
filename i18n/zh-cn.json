@@ -224,5 +224,17 @@
   "tasks.pet.bowl": "你没有给你的宠物碗加满水。",
   "tasks.at": "在",
   "tasks.terrain.fence": "农场的栅栏损坏了",
-  "tasks.terrain.damaged": "损坏的栅栏："
+  "tasks.terrain.damaged": "损坏的栅栏：",
+  "hud.balance": "当前余额",
+  "hud.year": "年份",
+  "hud.season": "季节",
+  "hud.day": "日期",
+  "hud.time": "时间",
+  "ui.ok": "好的",
+  "ui.close": "关闭",
+  "ui.itemtosearch": "要搜索的项目：",
+  "ui.searchplaceholder": "使用 '*' 进行通配符搜索",
+  "ui.search": "搜索",
+  "ui.stoptime": "时间暂停",
+  "ui.starttime": "时间开始"
 }
