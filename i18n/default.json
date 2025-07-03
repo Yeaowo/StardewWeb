@@ -290,5 +290,9 @@
   "ui.searchplaceholder": "Use an '*' for wild card search",
   "ui.search": "Search",
   "ui.stoptime": "Stop Time",
-  "ui.starttime": "Start Time"
+  "ui.starttime": "Start Time",
+  "ui.details": "Details",
+  "ui.save": "Save",
+  "ui.cancel": "Cancel",
+  "ui.clear": "Clear"
 }

@@ -26,3 +26,68 @@ base style sheets and scripts
 <link href='/css/stardew.css' rel='stylesheet'>
 <script src="/scripts/popper.min.js"></script>
 <script src='/scripts/stardewweb.js'></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const applyTranslations = (translations) => {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[key]) {
+                    // If the element is a button or similar, it might not have a text node child.
+                    // Using innerText is more robust.
+                    element.innerText = translations[key];
+                }
+            });
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-i18n-placeholder');
+                if (translations[key]) {
+                    element.placeholder = translations[key];
+                }
+            });
+
+            // Translate global script variables if they exist
+            if (typeof strStopTime !== 'undefined' && translations['ui.stoptime']) {
+                strStopTime = translations['ui.stoptime'];
+            }
+            if (typeof strStartTime !== 'undefined' && translations['ui.starttime']) {
+                strStartTime = translations['ui.starttime'];
+            }
+        };
+
+        const fetchTranslations = async (lang) => {
+            try {
+                let translations = {};
+                // Fetch the default language file first as a fallback.
+                const defaultResponse = await fetch(`/i18n/default.json`);
+                if (defaultResponse.ok) {
+                    translations = await defaultResponse.json();
+                }
+
+                // If a specific language is requested, fetch it and merge it over the default.
+                // This ensures that untranslated keys will still show the English text.
+                if (lang !== 'default') {
+                    const response = await fetch(`/i18n/${lang}.json`);
+                    if (response.ok) {
+                        const langTranslations = await response.json();
+                        Object.assign(translations, langTranslations);
+                    } else {
+                        console.warn(`Translation file for ${lang} not found.`);
+                    }
+                }
+                applyTranslations(translations);
+
+            } catch (error) {
+                console.error('Error loading translation file:', error);
+            }
+        };
+
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('zh')) {
+            fetchTranslations('zh-cn');
+        } else {
+            // No need to fetch 'default' again if it's the only one we want.
+            // But for consistency and fallback logic, we can call it.
+            fetchTranslations('default');
+        }
+    });
+</script>

@@ -236,5 +236,9 @@
   "ui.searchplaceholder": "使用 '*' 进行通配符搜索",
   "ui.search": "搜索",
   "ui.stoptime": "时间暂停",
-  "ui.starttime": "时间开始"
+  "ui.starttime": "时间开始",
+  "ui.details": "详情",
+  "ui.save": "保存",
+  "ui.cancel": "取消",
+  "ui.clear": "清空"
 }
