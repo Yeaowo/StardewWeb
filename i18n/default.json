@@ -294,5 +294,6 @@
   "ui.details": "Details",
   "ui.save": "Save",
   "ui.cancel": "Cancel",
-  "ui.clear": "Clear"
+  "ui.clear": "Clear",
+  "ui.delete": "Delete"
 }

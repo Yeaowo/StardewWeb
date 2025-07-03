@@ -25,6 +25,12 @@
             <div class="col-3 m-2 color_2nd_tier_label_bg">End</div><input class="col-7 stardew_round_border m-2" name="end" value="#END#">
         </div>
     </div>
-    <input styp="padding-top:15px;" type="submit" value="Save">
-    <button onclick="DeleteRule('#NAME#'); return false;">Cancel</button>
+    <div class="row" style="padding-top:10px;">
+        <div class="col-6 right">
+            <button onclick="DeleteRule('#NAME#'); return false;" data-i18n="ui.cancel">Cancel</button>
+        </div>
+        <div class="col-6 left">
+            <button type="submit" data-i18n="ui.save">Save</button>
+        </div>
+    </div>
 </form>

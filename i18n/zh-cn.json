@@ -240,5 +240,6 @@
   "ui.details": "详情",
   "ui.save": "保存",
   "ui.cancel": "取消",
-  "ui.clear": "清空"
+  "ui.clear": "清空",
+  "ui.delete": "删除"
 }
