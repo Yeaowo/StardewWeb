@@ -1,4 +1,4 @@
-﻿<meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
 <meta http-equiv="Content-Security-Policy" content="default-src  'self' 'unsafe-inline'; " />
@@ -33,8 +33,6 @@ base style sheets and scripts
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 if (translations[key]) {
-                    // If the element is a button or similar, it might not have a text node child.
-                    // Using innerText is more robust.
                     element.innerText = translations[key];
                 }
             });
@@ -44,8 +42,6 @@ base style sheets and scripts
                     element.placeholder = translations[key];
                 }
             });
-
-            // Translate global script variables if they exist
             if (typeof strStopTime !== 'undefined' && translations['ui.stoptime']) {
                 strStopTime = translations['ui.stoptime'];
             }
@@ -57,14 +53,11 @@ base style sheets and scripts
         const fetchTranslations = async (lang) => {
             try {
                 let translations = {};
-                // Fetch the default language file first as a fallback.
                 const defaultResponse = await fetch(`/i18n/default.json`);
                 if (defaultResponse.ok) {
                     translations = await defaultResponse.json();
                 }
 
-                // If a specific language is requested, fetch it and merge it over the default.
-                // This ensures that untranslated keys will still show the English text.
                 if (lang !== 'default') {
                     const response = await fetch(`/i18n/${lang}.json`);
                     if (response.ok) {
@@ -85,8 +78,6 @@ base style sheets and scripts
         if (userLang.startsWith('zh')) {
             fetchTranslations('zh-cn');
         } else {
-            // No need to fetch 'default' again if it's the only one we want.
-            // But for consistency and fallback logic, we can call it.
             fetchTranslations('default');
         }
     });

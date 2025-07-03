@@ -2,9 +2,6 @@
   "gameloaded": "Game is loaded.",
   "gamenotloaded": "Game is not loaded.",
   "librarynotloaded": "Internal library has not finished loading.",
-  //
-  //  nav bar captions
-  //
   "navbar.home": "Today",
   "navbar.tasks": "Daily Tasks",
   "navbar.production": "Production",
@@ -45,9 +42,6 @@
   "navbar.livestock": "Livestock",
   "navbar.social.tracker": "Tracker",
   "navbar.automation": "Automation",
-  //
-  //  web messages
-  //
   "dailytasks.noquests": "You have no active quests at the moment.",
   "wm.cachecleared": "The server cache has been cleared.",
   "wm.enablewarps": "Warping is disabled.  If you wish to use Warps select 'Warping Enabled' in the Config view.",
@@ -102,9 +96,6 @@
   "wm.defnces.up": "Defense (+{{strength}})",
   "wm.achieve.havecooked": "You have cooked this.",
   "wm.achieve.notcooked": "You have not cooked this.",
-  //
-  //  preconditions
-  //
   "precon.location": "The Player is in the location '{{l}}'.",
   "precon.sunny": "Weather must be sunny.",
   "precon.rainy": "Weather must be rainy.",
@@ -154,50 +145,29 @@
   "precon.cU": "No Festivals with {{U}} days.",
   "precon._l": "Host Player and current Player have not received the mail or non-mail flag {{l}}.",
   "precon._n": "Host Player and current Player have received the mail or non-mail flag {{n}}.",
-  //
-  //  product modifiers
-  //
   "prod.egg.brown": "(Brown)",
-  //
-  //  error messages
-  //
   "plugin.old": "One of your Plugins are out of date.  Please check for any plugin updates.",
   "plugin.error": "Possible plugin issue, error updating cache for plugins: ",
   "error.seelog": "An error occured, see log for details.",
-  //
-  //  farmer details
-  //
   "farmer.status.married": "Married",
   "farmer.status.divorced": "Divorced",
   "farmer.status.engaged": "Engaged",
   "farmer.status.single": "Single",
   "farmer.gender.male": "Male",
   "farmer.gender.femal": "Female",
-  //
-  //  friendship
-  //
   "farmer.friendship.dating.girlfriend": "Girlfriend",
   "farmer.friendship.dating.boyfriend": "Boyfriend",
   "farmer.friendship.divorced": "Divorced",
   "farmer.friendship.engaged": "Engaged",
   "farmer.friendship.friendly": "Single",
   "farmer.friendship.married": "Married",
-  //
-  //  answers
-  //
   "answer.yes": "Yes",
   "answer.no": "No",
-  //
-  //  skills table
-  //
   "skills.farming": "Farming",
   "skills.mining": "Mining",
   "skills.foraging": "Foraging",
   "skills.fishing": "Fishing",
   "skills.combat": "Combat",
-  //
-  //  tooltips
-  //
   "tooltip.canunderstanddwarves": "Unlocks the ability to speak to the Dwarf in The Mines",
   "tooltip.hasrustykey": "Used to enter The Sewers",
   "tooltip.hasmagnifyingglass": "Unlocks the ability to find Secret Notes",
@@ -210,14 +180,8 @@
   "tooltip.springonionbugs": "Increases sell price of Spring Onions by 5x",
   "tooltip.hastownkey": "Allows access to all buildings in town, at any time of day",
   "tooltip.hasjojacard": "Has a Joja membership card.",
-  //
-  //  daily tasks
-  //
   "tasks.complete": "All done!.",
   "tasks.nothingtodo": "Nothing to do.",
-  //
-  //  animal tasks
-  //
   "tasks.animal.notpettedanimals": "Not petted animals",
   "tasks.animal.uncollectedanimalproduct": "Uncollected animal products",
   "tasks.animal.emptyhay": "Empty hay spots on feeding benches",
@@ -227,9 +191,6 @@
   "tasks.animal.missinghays": " hays missing at ",
   "tasks.animal.ponds.attention": "Ponds needing attention",
   "tasks.animal.ponds.collect": "Ponds with items to collect",
-  //
-  //  crop tasks
-  //
   "tasks.crop.notwatered": " crops not watered",
   "tasks.crop.readytoharvest": " crops ready to harvest",
   "tasks.crop.dead": "Dead crops in the ",
@@ -243,24 +204,15 @@
   "tasks.crop.withfruit": " fruit ",
   "tasks.crop.withfruits": " fruits ",
   "tasks.crop.at": " at ",
-  //
-  //  cave tasks
-  //
   "tasks.cave.incave": " in the farm cave",
   "tasks.cave.itemname.fruits": "Fruits",
   "tasks.cave.itemname.mushrooms": "Mushrooms",
-  //
-  // misc tasks
-  //
   "tasks.misc.queen": "There's a new recipe on The Queen of Sauce.",
   "tasks.misc.merchant": "The traveling merchant is in town.",
   "tasks.misc.birthday": "It's {{NPCName}} birthday!",
   "tasks.misc.nohay": "You have no hay left.",
   "tasks.misc.hay": "You only have {{count}} hay left.",
   "tasks.misc.lastday": "It's the last day of the season, make sure to harvest all of your applicable crops.",
-  //
-  //  object tasks
-  //
   "tasks.object.crab": "Crabpots ready to collect",
   "tasks.object.crabpot": "Crabpots not baited",
   "tasks.object.machine": "Uncollected machines",
@@ -268,15 +220,9 @@
   "tasks.object.gold": "Gold ",
   "tasks.object.iridium": "Iridium ",
   "tasks.object.with": " with ",
-  //
-  //  pet tasks
-  //
   "tasks.pet.pet": "You did not pet your pet today.",
   "tasks.pet.bowl": "You did not fill your pet's bowl.",
   "tasks.at": " at ",
-  //
-  //  terrain tasks
-  //
   "tasks.terrain.fence": "Damaged Fence at Farm",
   "tasks.terrain.damaged": "Damaged Fences: ",
   "hud.balance": "Current Balance",
@@ -294,5 +240,6 @@
   "ui.details": "Details",
   "ui.save": "Save",
   "ui.cancel": "Cancel",
-  "ui.clear": "Clear"
+  "ui.clear": "Clear",
+  "ui.delete": "Delete"
 }
