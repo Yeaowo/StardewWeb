@@ -40,3 +40,83 @@
     text-align: center;
     font-size: 28pt;
 }
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    /* Make message boards and search divs full-width on smaller screens */
+    .message_board, .message_cork_board, .message_paper_board, .message_board_lg, .message_paper_board_lg, .message_board_full, .message_paper_board_full, .message_board_list, .message_cork_board_list, .message_board_list_lg, .message_board_title, .message_board_title_lg, .message_board_title_full {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding is included in the width */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Adjust search popup */
+    .lookuptext {
+        width: 95% !important;
+        max-width: 400px; /* Max-width for very small screens */
+        left: 50% !important;
+        transform: translateX(-50%);
+        top: 10% !important;
+    }
+    .search_container {
+        width: 100% !important;
+        padding-top: 50px; /* Adjust for closer button */
+        margin-left: 0;
+    }
+    .search_results {
+        width: calc(100% - 37px); /* Adjust for parent padding */
+        height: 350px;
+    }
+
+    .search_close_button {
+        top: 10px;
+        left: auto;
+        right: 10px;
+    }
+
+    .search_text input {
+        width: 60%;
+    }
+
+    /* Adjust main navbar font for better fit */
+    .navbar-brand span {
+        font-size: 20pt !important;
+    }
+
+    /* Adjust HUD font size */
+    .status_bar .p-0 {
+        font-size: 0.8rem;
+    }
+
+    .hud_data-bs {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Further reduce font size on very small screens */
+    .base_font {
+        font-size: 16pt;
+    }
+
+    .message_board_title {
+        font-size: 20pt;
+    }
+
+    .hud_data-bs, .status_bar .p-0 {
+        font-size: 0.7rem;
+    }
+
+    .navbar-brand span {
+        font-size: 16pt !important;
+    }
+
+    .search_text input {
+        width: 50%;
+        font-size: 12px;
+    }
+     .search_text button {
+        font-size: 12px;
+    }
+}
